@@ -43,12 +43,9 @@ class MainActivity : Activity(),  EasyPermissions.PermissionCallbacks{
     private val REQUEST_SELECT_FILE_CODE = 100
     private val REQUEST_FILE_CHOOSER_CODE = 101
     private val REQUEST_FILE_CAMERA_CODE = 102
-    /** 默认图片压缩大小（单位：K）  */
     val IMAGE_COMPRESS_SIZE_DEFAULT = 400
-    /** 压缩图片最小高度  */
-    val COMPRESS_MIN_HEIGHT = 900
-    /** 压缩图片最小宽度  */
-    val COMPRESS_MIN_WIDTH = 675
+    val COMPRESS_MIN_HEIGHT = 600
+    val COMPRESS_MIN_WIDTH = 500
 
     private var mUploadMsg: ValueCallback<Uri?>? = null
     private var mUploadMsgs: ValueCallback<Array<Uri>>? = null
